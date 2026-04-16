@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoja de Vida Dev2</title>
+
+    <link rel="stylesheet" href="{% static 'dev2/style.css' %}">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="card header">
+        <img src="{% static 'dev2/foto.jpg' %}" alt="Foto">
+        <h1>Nombre Compañera</h1>
+        <p class="rol">Desarrolladora Frontend</p>
+        <button onclick="toggleInfo()">Ver más</button>
+    </div>
+
+    <!-- INFO -->
+    <div class="card info hidden" id="info">
+
+        <section>
+            <h2>Perfil</h2>
+            <p>
+                Apasionada por el diseño web y la creación de interfaces modernas,
+                con experiencia en frontend y diseño UX/UI.
+            </p>
+        </section>
+
+        <section>
+            <h2>Habilidades</h2>
+
+            <div class="skill">
+                <span>HTML</span>
+                <div class="bar"><div class="progress html"></div></div>
+            </div>
+
+            <div class="skill">
+                <span>CSS</span>
+                <div class="bar"><div class="progress css"></div></div>
+            </div>
+
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="bar"><div class="progress js"></div></div>
+            </div>
+
+            <div class="skill">
+                <span>React</span>
+                <div class="bar"><div class="progress react"></div></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Proyectos</h2>
+            <ul>
+                <li>Landing Page Moderna</li>
+                <li>Clon de Dashboard UI</li>
+                <li>App interactiva con JavaScript</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contacto</h2>
+            <p>Email: compañera@email.com</p>
+            <button onclick="mostrarMensaje()">Contactar</button>
+            <p id="mensaje"></p>
+        </section>
+
+    </div>
+
+</div>
+
+<script src="{% static 'dev2/script.js' %}"></script>
+
+</body>
+</html>

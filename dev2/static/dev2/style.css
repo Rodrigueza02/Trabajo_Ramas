@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.card {
+    background: #1f2a40;
+    border-radius: 15px;
+    padding: 25px;
+    width: 350px;
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.6);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.header {
+    text-align: center;
+}
+
+.header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.rol {
+    color: #bbb;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #00c6ff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #009ec3;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #00c6ff;
+    padding-bottom: 5px;
+}
+
+/* SKILLS */
+.skill {
+    margin-bottom: 10px;
+}
+
+.bar {
+    background: #555;
+    border-radius: 10px;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 10px;
+}
+
+.html { width: 90%; background: red; }
+.css { width: 85%; background: blue; }
+.js { width: 75%; background: yellow; }
+.react { width: 70%; background: cyan; }
+
+.hidden {
+    display: none;
+}

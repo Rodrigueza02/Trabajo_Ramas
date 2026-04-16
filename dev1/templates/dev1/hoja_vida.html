@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoja de Vida Dev1</title>
+
+    <link rel="stylesheet" href="{% static 'dev1/style.css' %}">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="card header">
+        <img src="{% static 'dev1/foto.jpg' %}" alt="Foto">
+        <h1>Tu Nombre</h1>
+        <p class="rol">Desarrollador Web</p>
+        <button onclick="toggleInfo()">Ver más</button>
+    </div>
+
+    <!-- INFO -->
+    <div class="card info hidden" id="info">
+
+        <section>
+            <h2>Perfil</h2>
+            <p>
+                Soy desarrollador web con habilidades en diseño de interfaces modernas,
+                desarrollo backend con Django y creación de experiencias dinámicas.
+            </p>
+        </section>
+
+        <section>
+            <h2>Habilidades</h2>
+
+            <div class="skill">
+                <span>HTML</span>
+                <div class="bar"><div class="progress html"></div></div>
+            </div>
+
+            <div class="skill">
+                <span>CSS</span>
+                <div class="bar"><div class="progress css"></div></div>
+            </div>
+
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="bar"><div class="progress js"></div></div>
+            </div>
+
+            <div class="skill">
+                <span>Django</span>
+                <div class="bar"><div class="progress django"></div></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Proyectos</h2>
+            <ul>
+                <li>Portafolio Web Personal</li>
+                <li>Dashboard tipo Admin</li>
+                <li>Sistema de usuarios en Django</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contacto</h2>
+            <p>Email: tuemail@gmail.com</p>
+            <button onclick="mostrarMensaje()">Contactar</button>
+            <p id="mensaje"></p>
+        </section>
+
+    </div>
+
+</div>
+
+<script src="{% static 'dev1/script.js' %}"></script>
+
+</body>
+</html>
