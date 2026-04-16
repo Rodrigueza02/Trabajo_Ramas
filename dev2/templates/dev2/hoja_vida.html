@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoja de Vida Dev2</title>
+
+    <link rel="stylesheet" href="{% static 'dev2/style.css' %}">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+        <img src="{% static 'dev2/foto.jpg' %}" alt="Foto">
+        <h1>Nombre de tu compañera</h1>
+        <h3>Diseñadora y Desarrolladora Web</h3>
+        <p>Creativa | Responsable | Innovadora</p>
+    </div>
+
+    <!-- PERFIL -->
+    <div class="section">
+        <h2>Perfil Profesional</h2>
+        <p>
+            Soy una persona apasionada por el diseño y desarrollo web, con habilidades en la creación
+            de interfaces modernas, dinámicas y funcionales. Me caracterizo por mi responsabilidad,
+            trabajo en equipo y capacidad para resolver problemas de forma eficiente.
+        </p>
+    </div>
+
+    <!-- DATOS PERSONALES -->
+    <div class="section">
+        <h2>Datos Personales</h2>
+        <ul>
+            <li><strong>Nombre:</strong> Nombre completo</li>
+            <li><strong>Edad:</strong> 20 años</li>
+            <li><strong>Ciudad:</strong> Tu ciudad</li>
+            <li><strong>Email:</strong> correo@gmail.com</li>
+            <li><strong>Teléfono:</strong> 3000000000</li>
+        </ul>
+    </div>
+
+    <!-- HABILIDADES -->
+    <div class="section">
+        <h2>Habilidades</h2>
+
+        <div class="skill">
+            <p>HTML</p>
+            <div class="bar"><div class="progress html"></div></div>
+        </div>
+
+        <div class="skill">
+            <p>CSS</p>
+            <div class="bar"><div class="progress css"></div></div>
+        </div>
+
+        <div class="skill">
+            <p>JavaScript</p>
+            <div class="bar"><div class="progress js"></div></div>
+        </div>
+
+        <div class="skill">
+            <p>Django</p>
+            <div class="bar"><div class="progress django"></div></div>
+        </div>
+    </div>
+
+    <!-- EDUCACIÓN -->
+    <div class="section">
+        <h2>Educación</h2>
+        <p><strong>Universidad:</strong> Universidad Cooperativa de Colombia</p>
+        <p><strong>Programa:</strong> Ingeniería de Software</p>
+        <p><strong>Año:</strong> 2023 - Actualidad</p>
+    </div>
+
+    <!-- EXPERIENCIA -->
+    <div class="section">
+        <h2>Experiencia</h2>
+        <p><strong>Proyecto Web Personal</strong></p>
+        <p>
+            Desarrollo de un sitio web utilizando HTML, CSS, JavaScript y Django,
+            implementando diseño responsivo y buenas prácticas de programación.
+        </p>
+    </div>
+
+    <!-- PROYECTOS -->
+    <div class="section">
+        <h2>Proyectos</h2>
+        <ul>
+            <li>Portafolio Web Personal</li>
+            <li>Sistema de Gestión de Usuarios</li>
+            <li>Clon de Dashboard con Next.js</li>
+        </ul>
+    </div>
+
+    <!-- CONTACTO -->
+    <div class="section contacto">
+        <h2>Contacto</h2>
+        <button onclick="mostrarMensaje()">Enviar mensaje</button>
+        <p id="mensaje"></p>
+    </div>
+
+</div>
+
+<script src="{% static 'dev2/script.js' %}"></script>
+
+</body>
+</html>
