@@ -1,3 +1,14 @@
+function toggleInfo() {
+    const info = document.getElementById("info");
+
+    if (info.classList.contains("hidden")) {
+        info.classList.remove("hidden");
+    } else {
+        info.classList.add("hidden");
+    }
+}
+
 function mostrarMensaje() {
-    document.getElementById("mensaje").innerText = "Gracias por visitar mi hoja de vida!";
+    const mensaje = document.getElementById("mensaje");
+    mensaje.innerText = "¡Gracias por contactarme! 😊";
 }
